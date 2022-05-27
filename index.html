@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="content" id="content">
+
+            <h1>CONTENT</h1>
+            <a href="index2.html">Go to short content page</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <h1>FOOTER</h1>
+    </footer>
+    <script>
+        const content = document.getElementById("content");
+        const n = 50;
+        for(let i = 0 ; i < n ;i++){
+            const h1 = document.createElement("h1");
+            h1.innerHTML = `Row: ${i+1}`;
+            content.appendChild(h1);
+        }
+    </script>
+</body>
+</html>
